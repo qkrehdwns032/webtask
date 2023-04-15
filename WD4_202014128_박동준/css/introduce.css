@@ -1,0 +1,25 @@
+.left {
+    position : absolute;
+    top :20%;
+    left : 10%;
+    transform : translate(-50%,-50%);
+}
+
+.f_p{
+    position : absolute;
+    top :10%;
+    left : 15%;
+    height :650px;
+    overflow-y:scroll;
+}
+.side-list{
+    padding-left: 45px;
+    margin: 30px;
+}
+
+.list_color {
+    color : blue;
+}
+span {
+    color: rgb(174, 74, 74);
+}

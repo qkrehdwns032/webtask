@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>반려동물</title>
+  <meta name="author" content="박동준">
+  <meta name="description" content="반려동물 소개">
+  <meta name="keywords" content="반려동물,강아지,고양이,거북이">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+      <nav class="nav_bar">
+          <div class="logo">
+              <a href="index.html"><b>반려동물</b></a>
+          </div>
+          <ul class="top_menu">
+              <li><a href="introduce.html"><b>반려동물 소개</b></a></li>
+              <li><a href="kind.html"><b>반려동물 종류</b></a></li>
+              <li><a href="taste.html"><b>반려동물 식성</b></a></li>
+              <li><a href="table.html"><b>반려동물 용품</b></a></li>
+          </ul>
+      </nav>
+  </header>
+  <div class="title"><b>반려동물 사이트에 오신것을 환영합니다.</b></div>
+  </div>
+  <div>
+    <form id="myform">
+      <fieldset style="border:0">
+        <legend><b>선호하는 반려동물이 있으신가요?</b></legend>
+        <b>본인 이름:</b><input type="text" class="name" id="msg"><br>
+        <b>선호하는 반려동물 :</b> <br><input type="radio"id="dog" name="animal" value="1" checked>
+                            <b>강아지</b><img src="media/강아지.jpg" id="dog" class="dog"  height="140" width="350"
+                                   onmouseover="this.src='media/강아지 바뀌는 사진.jpg'"
+                                   onmouseout="this.src='media/강아지.jpg'" ><br>
+                            <input type="radio" id="cat" name="animal" value="2">
+                            <b>고양이</b><img src="media/고양이.jpg" id="cat" class="cat" height="140" width="350"
+                                    onmouseover="this.src='media/고양이 바뀌는 사진.jpg'"
+                                    onmouseout="this.src='media/고양이.jpg'"><br>
+                            <input type="radio" name="animal" value="3">
+                            <b>거북이</b><img src="media/거북이.jpg" id="turtle" class="turtle" height="140" width="350"
+                                    onmouseover="this.src='media/거북이 바뀌는 사진.jpg'"
+                                    onmouseout="this.src='media/거북이.jpg'"><br>
+        <b>이유 :</b> <textarea class="area" cols="70" rows="10">이곳에 이유를 작성해보세요.
+        </textarea>
+        <button onclick="f(event)" class="button">확인</button>
+      </fieldset>
+    </form>
+  </div>
+  <script>
+    function f(e)
+    {
+      const name= document.getElementById('msg').value;
+      const test1= document.getElementById("dog")
+      const test2= document.getElementById("cat")
+      const test3= document.getElementById("turtle")
+
+      const result1= test1.checked;
+      const result2= test2.checked;
+      const result3= test3.checked;
+
+      if(result1==true)
+      {
+        alert(name+"님 안녕하세요.\n선호하는 반려동물은 강아지이군요!");
+      }
+      else if(result2==true)
+      {
+        alert(name+"님 안녕하세요.\n선호하는 반려동물은 고양이이군요!");
+      }
+      else
+      {
+        alert(name+"님 안녕하세요.\n선호하는 반려동물은 거북이이군요!");
+      }
+    }
+
+  </script>
+</body>
+</html>

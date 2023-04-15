@@ -1,0 +1,20 @@
+.left {
+    position : absolute;
+    top :20%;
+    left : 10%;
+    transform : translate(-50%,-50%);
+}
+
+.side-list {
+    padding-left : 45px;
+}
+.side {
+    margin :30px;
+}
+.f_p {
+    position : absolute;
+    top :10%;
+    left : 15%;
+    height :650px;
+    overflow-y:scroll;
+}
